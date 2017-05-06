@@ -18,4 +18,9 @@ x = numpy.expand_dims(
 )
 
 model = keras.models.load_model(args.model)
-print(model.predict(x))
+
+predicted = model.predict(x)[0,0]
+if predicted == 0:
+    print("anime")
+else:
+    print("others")

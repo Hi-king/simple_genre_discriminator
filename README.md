@@ -4,6 +4,7 @@ collect anime images from miscellaneous images in the web
 ## just predict !
 
 ```
+pip install -r requirements.txt
 python predict.py weights.2251-2.63-0.84.hdf5 your_image.png
 ```
 
